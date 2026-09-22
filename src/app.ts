@@ -18,6 +18,7 @@ import partnerRoutes from './routes/partnerRoutes';
 import testimonialRoutes from './routes/testimonialRoutes';
 import milestoneRoutes from './routes/milestoneRoutes';
 import dashboardRoutes from './routes/dashboardRoutes';
+import seedRoutes from './routes/seedRoutes';
 
 const app: Application = express();
 
@@ -51,5 +52,6 @@ app.use('/api/contacts', contactRoutes);
 app.use('/api/partners', partnerRoutes);
 app.use('/api/testimonials', testimonialRoutes);
 app.use('/api/milestones', milestoneRoutes);
+app.use('/api/seed', seedRoutes);
 
 export default app;
